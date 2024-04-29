@@ -23,7 +23,7 @@ const MeetingTypeList = () => {
         img="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
-        handleClick={"isJoinMeeting"}
+        handleClick={ ()=>('isJoinMeeting')}
         className="bg-blue-1"
       />
       <HomeCard
