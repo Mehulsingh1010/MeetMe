@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import "react-datepicker/dist/react-datepicker.css"
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "MeetMe",

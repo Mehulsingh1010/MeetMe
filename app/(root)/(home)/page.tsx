@@ -8,7 +8,7 @@ const Home = () => {
     hour: "2-digit",
     minute: "2-digit",
     hour12: true,
-    timeZone: "Asia/Kolkata", // Set the desired time zone here
+    timeZone: "Asia/Kolkata", 
   });
   return (
     <section className="flex size-full flex-col gap-10 text-white ">
