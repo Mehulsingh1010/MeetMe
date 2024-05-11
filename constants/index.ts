@@ -24,6 +24,11 @@ export const sidebarLinks = [
     route: "/personal-room",
     imgUrl: "/icons/add-personal.svg",
   },
+  {
+    label:'About The Creator',
+    route: "/aboutme",
+    imgUrl: "/icons/aboutme.svg",
+  },
 
 ];
 
