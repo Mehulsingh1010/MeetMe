@@ -15,7 +15,7 @@ const Sidebar = () => {
         {sidebarLinks.map((link) => {
           const isActive =
             pathname === link.route ;
-          return <Link href={link.route} key={link.label} className={cn('flex gap-4 items-center p-4 rounded-lg justify-start',{
+          return <Link href={link.route} key={link.label} className={cn('flex gap-4 items-center p-4 rounded-lg hover:bg-blue-500 justify-start',{
             'bg-blue-1' :isActive,
           })}>
             {/* {link.label} */}
