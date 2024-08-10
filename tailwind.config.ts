@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 
-const config = {
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -66,7 +66,6 @@ const config = {
       backgroundImage: {
         hero: "url('/images/hero-background.png')",
       },
-      // Adjusted text-shadow with a darker color
       textShadow: {
         'outline': '0 0 2px rgba(0, 0, 0, 0.85)', // Darker shadow
       },
@@ -75,7 +74,7 @@ const config = {
   plugins: [
     require('tailwindcss-animate'),
     // Add a plugin for text-shadow if you have one or use the below inline plugin
-    function ({ addUtilities }) {
+    function ({ addUtilities }: { addUtilities: (utilities: any, variants?: string[]) => void }) {
       addUtilities({
         '.text-shadow-outline': {
           textShadow: '0 0 2px rgba(0, 0, 0, 0.85)', // Darker shadow
@@ -83,6 +82,6 @@ const config = {
       }, ['responsive', 'hover']);
     }
   ],
-} satisfies Config;
+};
 
 export default config;
