@@ -8,6 +8,7 @@ import "react-datepicker/dist/react-datepicker.css"
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react"
 
+
 export const metadata: Metadata = {
   title: "MeetMe",
   description: "Video calling app",
